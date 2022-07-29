@@ -1,6 +1,6 @@
 #!/bin/bash
 TERM=kitty
-theme_overrides="listview { enabled: false;} num-rows { enabled: false;} num-filtered-rows { enabled: false;} case-indicator { enabled: false;}"
+theme_overrides="listview { enabled: false;} num-rows { enabled: false;} num-filtered-rows { enabled: false;} case-indicator { enabled: false;} textbox-num-sep { enabled: false;}"
 
 workspace=$(rofi -p "New workspace" -dmenu -theme-str "$theme_overrides")
 [[ -z $workspace ]] && exit

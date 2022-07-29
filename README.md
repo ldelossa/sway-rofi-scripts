@@ -6,15 +6,15 @@ You'll probably want to use this with the [Rofi Fork](https://github.com/lbonn/r
 
 # The Goods
 
-## mark-switcher.sh
-
-Switch directly to a window you have set a mark on.
-
 ## sway-drun.sh
 
 Parses out desktop files and displays them for launching.
 This is a carry over from "sway-fzfify", you probably just want to use Rofi's 
 default "drun" mode (it has fancy icons).
+
+## sway-mark-switcher.sh
+
+Switch directly to a window you have set a mark on.
 
 ## sway-mark.sh
 
