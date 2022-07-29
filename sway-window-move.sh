@@ -6,7 +6,7 @@ for workspace in "${workspaces[@]}"; do
     str="$str$workspace\n"
 done
 
-selection=$(printf $str | rofi -p "Move window to which workspace?" -dmenu)
+selection=$(printf $str | rofi -p "Move window to which workspace" -dmenu)
 [[ -z $selection ]] && exit
 readarray -t query_and_workspace <<< "$selection"
 query="${query_and_workspace[0]}"
