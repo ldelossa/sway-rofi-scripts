@@ -9,7 +9,7 @@ IFS=':' read -ra cdpaths <<< "$CDPATH"
 for path in "${cdpaths[@]}"; do
     echo "$path/$workspace"
     if [[ -d "$path/$workspace" ]]; then
-        $TERM --detach --working-directory "$path/$workspace"
+        swaymsg exec "$TERM --detach --working-directory \"$path/$workspace\""
         exit
     fi
 done
